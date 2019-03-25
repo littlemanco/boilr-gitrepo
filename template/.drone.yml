@@ -1,0 +1,21 @@
+# Drone is used to enforce project requirements. This includes things like
+#
+# - Lints
+# - Tests
+# - Generated documentation
+# - Testing environments
+#
+# And so fourth
+---
+kind: "pipeline"
+name: "lint"
+steps:
+  - name: "lint"
+    image: "debian:stretch-slim"
+
+# By default, trigger on all pull requests to Master
+trigger:
+  branch:
+    - "master"
+  event:
+    - "pull_request"

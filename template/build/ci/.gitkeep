@@ -1,0 +1,5 @@
+# This folder should be used for CI scripts.
+#
+# Generally speaking, it is an anti-pattern to put too much logic into build steps. Instead build tools to do the job
+# and read configuration for those tools out of central build configuration, or use a build systems such as Drone CI
+# that allows reusing build steps in the form of "plugins".

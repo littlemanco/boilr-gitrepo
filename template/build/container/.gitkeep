@@ -1,0 +1,7 @@
+# This folder should be used for containers
+#
+# If there are multiple containers for a service (such as containers with the sidecar pattern and so fourth), create
+# multiple subdirectories
+#
+# However, multiple containers are an anti-pattern. If a container can be reused across multiple different projects
+# establish it with a separate lifecycle in a separate repository
